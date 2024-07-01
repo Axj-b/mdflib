@@ -104,7 +104,7 @@ class MdfChannelObserver {
   }
 };
 
-std::vector<MdfChannelObserver> MdfCreateChannelObserverForChannelGroup(
+static std::vector<MdfChannelObserver> MdfCreateChannelObserverForChannelGroup(
     MdfDataGroup data_group, MdfChannelGroup channel_group) {
   size_t count =
       MdfChannelGroupGetChannels(channel_group.GetChannelGroup(), nullptr);
